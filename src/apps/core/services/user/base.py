@@ -12,7 +12,7 @@ if TYPE_CHECKING:
     from apps.core.models.user import User
 
 
-class UserService(ABaseService):
+class UserService(ABaseService['User']):
     def __init__(self, user: 'User') -> None:
         self.user = user
 

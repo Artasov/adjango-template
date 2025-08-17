@@ -15,7 +15,7 @@ from apps.core.services.user.base import UserService
 from utils.pictures import CorrectOrientation
 
 
-class User(AAbstractUser):
+class User(AAbstractUser[UserService]):
     service_class = UserService
     objects = UserManager()
 
