@@ -9,5 +9,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'adjango',
+
     'apps.core',
 ]
