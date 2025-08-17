@@ -1,0 +1,49 @@
+from adjango.utils.common import is_celery
+from django.utils.translation import gettext_lazy as _
+
+from config.base import *
+from config.modules.adjango import *
+from config.modules.apps import *
+from config.modules.cache import *
+from config.modules.celery_settings import *
+from config.modules.email import *
+from config.modules.locale import *
+from config.modules.logging import *
+from config.modules.middleware import *
+from config.modules.net import *
+from config.modules.redis import *
+from config.modules.rest import *
+from config.modules.silk import *
+from config.modules.storage import *
+from config.modules.ws import *
+from utils.log import get_global_logger
+
+log = get_global_logger()
+log.info('#####################################')
+log.info('########## Server Settings ##########')
+log.info('#####################################')
+log.info(f'{IS_CELERY=}')
+log.info(f'{BASE_DIR=}')
+log.info(f'{DOMAIN_URL=}')
+log.info(f'{HTTPS=}')
+log.info(f'{TIME_ZONE=}')
+log.info(f'{POSTGRES_USE=}')
+log.info(f'{REDIS_HOST=}')
+log.info(f'{REDIS_PORT=}')
+log.info(f'{CSRF_TRUSTED_ORIGINS=}')
+log.info(f'{ALLOWED_HOSTS=}')
+log.info(f'{DEBUG=}')
+log.info(f'{DEV=}')
+log.info(f'{ASGI_APPLICATION=}')
+log.info(f'{WSGI_APPLICATION=}')
+log.info(f'{STATIC_URL=}')
+log.info(f'{MEDIA_URL=}')
+log.info(f'{STATIC_ROOT=}')
+log.info(f'{MEDIA_ROOT=}')
+log.info(f'{DATA_UPLOAD_MAX_MEMORY_SIZE=}')
+log.info(f'{FILE_UPLOAD_MAX_MEMORY_SIZE=}')
+log.info(f'{FILE_UPLOAD_HANDLERS=}')
+log.info(f'{FILE_UPLOAD_TEMP_DIR=}')
+log.info('#####################################')
+log.info('#####################################')
+log.info('#####################################')
