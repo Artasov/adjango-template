@@ -13,6 +13,7 @@ python = "^3.12"
 Django = "5.2.5"
 adjango = "0.7.5"
 djangorestframework = "3.16.1"
+djangorestframework-simplejwt = "5.5.1"
 adrf = "0.1.9"
 celery = "5.5.3"
 daphne = "4.2.1"
@@ -29,7 +30,8 @@ django-silk = "5.4.1"
 django-imagekit = "5.0.0"
 django-user-agents = "0.4.0"
 django-object-actions = "5.0.0"
-django-import-export = { version = "4.3.8", extras = ["all"] }
+django-import-export = { version = "4.3.9", extras = ["all"] }
+xldashboard = "0.1.3"
 
 pytest-asyncio = "0.26.0"
 pytest-django = "4.11.1"
