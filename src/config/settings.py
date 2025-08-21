@@ -5,7 +5,7 @@ from config.base import *
 from config.modules.adjango import *
 from config.modules.apps import *
 from config.modules.cache import *
-from config.modules.celery_settings import *
+from config.modules.celery import *
 from config.modules.email import *
 from config.modules.locale import *
 from config.modules.logging import *

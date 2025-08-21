@@ -15,8 +15,7 @@ from apps.core.services.user.base import UserService
 from utils.pictures import CorrectOrientation
 
 
-class User(AAbstractUser[UserService]):
-    service_class = UserService
+class User(AAbstractUser):
     objects = UserManager()
 
     email = EmailField(_('Email'), blank=True, null=True, db_index=True)
@@ -32,6 +31,9 @@ class User(AAbstractUser[UserService]):
     is_test = BooleanField(_('Is test'), default=False)
 
     def __str__(self): return self.service.full_name
+
+    @property
+    def service(self) -> UserService: return UserService(self)
 
     def save(self, *args, **kwargs):
         if not self.username: self.username = self.service.generate_random_username()
